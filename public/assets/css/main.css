@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c6c6c6;
+}
+
+.flex-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.form-box{
+    width: 450px;
+    border-radius: 20px;
+    height: auto;
+    padding: 20px;
+}
+
+.title-form {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* label color */
+.input-field label {
+    color: #000 !important;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label {
+    color: #1e88e5 !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #1e88e5 !important;
+    box-shadow: 0 1px 0 0 #1e88e5 !important;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid green !important;
+    box-shadow: 0 1px 0 0 green !important;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+}
